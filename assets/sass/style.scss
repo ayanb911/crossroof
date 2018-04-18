@@ -5,10 +5,13 @@ $color-dark: #222;
 $color-accent: #EB6F7E;
 
 //general styles
+html, body{
+  height: 100%;
+}
+
 body{
   font-family: 'Roboto', sans-serif;
   line-height: 1;
-  letter-spacing: 1.2px;
   font-weight: 400;
   *{
     box-sizing: border-box;
@@ -26,11 +29,66 @@ a{
   letter-spacing: 1.2px;
   font-weight: 400;
 }
-.kb-container{
-  padding: 0 60px;
+
+.launch-content{
+  font-family: "Montserrat";
+  color: #222;
+  font-weight: 400;
+  max-width: 60%;
   margin: 0 auto;
+  @media screen and (max-width: 979px){
+    max-width: 90%;
+  }
+  p{
+    margin: 0;
+  }
+  a{
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      right: 0;
+      height: 2px;
+      width: 100%;
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+    &:hover{
+      color: #222;
+      &:after{
+        background: #222;
+      }
+    }
+  }
+  img{
+    height: 6vw;
+    @media screen and (max-width: 979px){
+      height: 16vw;
+    }
+  }
+  h4{
+    font-weight: 700;
+  }
+  .who{
+    width: 100%;
+    line-height: 1.4;
+    &.is-desktop{
 
-  margin-bottom: 40px;
-
-  max-width: 1440px;
+    }
+  }
+  .contact{
+    a:first-child{
+      margin-right: 16px;
+    }
+    @media screen and (max-width: 767px){
+      flex-direction: column;
+      a:first-child{
+        margin-right: 0px;
+        margin-bottom: 16px;
+      }
+    }
+  }
 }
