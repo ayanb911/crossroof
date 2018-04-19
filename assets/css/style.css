@@ -1,0 +1,69 @@
+html, body {
+  height: 100%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  font-weight: 400; }
+  body * {
+    box-sizing: border-box; }
+
+a {
+  color: #222;
+  text-decoration: none !important; }
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  letter-spacing: 1.2px;
+  font-weight: 400; }
+
+.launch-content {
+  font-family: "Montserrat";
+  color: #222;
+  font-weight: 400;
+  max-width: 60%;
+  margin: 0 auto; }
+  @media screen and (max-width: 979px) {
+    .launch-content {
+      max-width: 90%; } }
+  .launch-content p {
+    margin: 0; }
+  .launch-content a {
+    font-weight: 500;
+    text-decoration: none;
+    position: relative; }
+    .launch-content a:after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      right: 0;
+      height: 2px;
+      width: 100%;
+      background: transparent;
+      transition: all 0.3s ease; }
+    .launch-content a:hover {
+      color: #222; }
+      .launch-content a:hover:after {
+        background: #222; }
+  .launch-content img {
+    height: 6vw; }
+    @media screen and (max-width: 979px) {
+      .launch-content img {
+        height: 16vw; } }
+  .launch-content h4 {
+    font-weight: 700; }
+  .launch-content .who {
+    width: 100%;
+    line-height: 1.4; }
+  .launch-content .contact a:first-child {
+    margin-right: 16px; }
+  @media screen and (max-width: 767px) {
+    .launch-content .contact {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .launch-content .contact a:first-child {
+        margin-right: 0px;
+        margin-bottom: 16px; } }
