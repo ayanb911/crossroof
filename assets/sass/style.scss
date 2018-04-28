@@ -36,7 +36,6 @@ body{
 //element styles
 .has-container{
   margin: 0 90px;
-  z-index: 2;
   position: relative;
 }
 section{
@@ -69,7 +68,7 @@ section{
 
 //specific styles
 .home-banner{
-  max-height: 732px;
+  min-height: 732px;
   height: 100%;
   position: relative;
   background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat center center;
@@ -92,6 +91,7 @@ section{
     padding-top: 34px;
     margin-bottom: 70px;
     color: $color-light;
+    z-index: 2;
     &>span{
       &:first-child{
         margin-bottom: 12px;
@@ -100,48 +100,83 @@ section{
   }
   .icn_scrolldown{
     margin-bottom: 180px;
+    z-index: 2;
     img{
       animation: scrollDown 1s linear infinite alternate;
     }
   }
-  .banner-menu{
-    position: relative;
+  .banner-menu-wrapper{
     width: 100%;
-    margin-bottom: 52px;
-    .nav-panel{
-      position: absolute;
-      justify-content: space-between;
-      width: 36%;
-      &.is-left{
-        left: 0;
-      }
-      &.is-right{
-        right: 0;
-      }
-      .menu-item{
-        font-family: $font-din;
-        font-size: 18px;
-        color: $color-light;
-        opacity: 0.6;
-        letter-spacing: 1.35px;
-        text-align: center;
-        &:last-child{
-          margin-right: 0;
+    background: transparent;
+    z-index: 2;
+    .banner-menu{
+      position: relative;
+      width: 100%;
+      .nav-panel{
+        position: absolute;
+        justify-content: space-between;
+        width: 36%;
+        &.is-left{
+          left: 0;
         }
-        &:hover{
-          opacity: 1;
+        &.is-right{
+          right: 0;
+        }
+        .menu-item{
+          font-family: $font-din;
+          font-size: 18px;
+          color: $color-light;
+          opacity: 0.6;
+          letter-spacing: 1.35px;
+          text-align: center;
+          &:last-child{
+            margin-right: 0;
+          }
+          &:hover{
+            opacity: 1;
+          }
+        }
+      }
+      .page-logo-wrapper{
+        margin: 0 90px;
+        min-width: 195px;
+        max-height: 54px;
+        overflow: hidden;
+        .page-logo{
+          img{
+            height: 48px;
+            width: auto;
+            &:last-child{
+              opacity: 0;
+            }
+          }
         }
       }
     }
-    .page-logo-wrapper{
-      margin: 0 90px;
-      min-width: 195px;
-      max-height: 48px;
-      overflow: hidden;
-      .page-logo{
-        img{
-          height: 48px;
-          width: auto;
+    &.is-fixed{
+      position: fixed;
+      top:0;
+      left:0;
+      background: $color-light;
+      z-index: 999;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      .banner-menu{
+        margin: 0 90px;
+        width: auto;
+        .menu-item{
+          color: $color-dark;
+        }
+        .page-logo{
+          transform: translateY(-13px);
+          img{
+            height: 24px;
+            &:first-child{
+              opacity: 0;
+            }
+            &:last-child{
+              opacity: 1;
+            }
+          }
         }
       }
     }
@@ -155,6 +190,7 @@ section{
     }
   }
 }
+
 
 
 

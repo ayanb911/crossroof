@@ -20,7 +20,6 @@ body {
 
 .has-container {
   margin: 0 90px;
-  z-index: 2;
   position: relative; }
 
 section {
@@ -40,7 +39,7 @@ section {
   color: #222;
   letter-spacing: 1px;
   text-align: center;
-  padding: 0 36px;
+  padding: 16px 36px 0 36px;
   background: #fff url(../../assets/images/Icons/icn_button-arrow.svg) no-repeat;
   background-size: 10px;
   background-position: 92% 19px;
@@ -50,7 +49,7 @@ section {
     background-position: 94% 19px; }
 
 .home-banner {
-  max-height: 732px;
+  min-height: 732px;
   height: 100%;
   position: relative;
   background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat center center;
@@ -71,47 +70,75 @@ section {
     margin-top: 160px;
     padding-top: 34px;
     margin-bottom: 70px;
-    color: #fff; }
+    color: #fff;
+    z-index: 2; }
     .home-banner .banner-title > span:first-child {
       margin-bottom: 12px; }
   .home-banner .icn_scrolldown {
-    margin-bottom: 180px; }
+    margin-bottom: 180px;
+    z-index: 2; }
     .home-banner .icn_scrolldown img {
       -webkit-animation: scrollDown 1s linear infinite alternate;
               animation: scrollDown 1s linear infinite alternate; }
-  .home-banner .banner-menu {
-    position: relative;
+  .home-banner .banner-menu-wrapper {
     width: 100%;
-    margin-bottom: 52px; }
-    .home-banner .banner-menu .nav-panel {
-      position: absolute;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 36%; }
-      .home-banner .banner-menu .nav-panel.is-left {
-        left: 0; }
-      .home-banner .banner-menu .nav-panel.is-right {
-        right: 0; }
-      .home-banner .banner-menu .nav-panel .menu-item {
-        font-family: DINCondensed;
-        font-size: 18px;
-        color: #fff;
-        opacity: 0.6;
-        letter-spacing: 1.35px;
-        text-align: center; }
-        .home-banner .banner-menu .nav-panel .menu-item:last-child {
-          margin-right: 0; }
-        .home-banner .banner-menu .nav-panel .menu-item:hover {
-          opacity: 1; }
-    .home-banner .banner-menu .page-logo-wrapper {
-      margin: 0 90px;
-      min-width: 195px;
-      max-height: 48px;
-      overflow: hidden; }
-      .home-banner .banner-menu .page-logo-wrapper .page-logo img {
-        height: 48px;
+    background: transparent;
+    z-index: 2; }
+    .home-banner .banner-menu-wrapper .banner-menu {
+      position: relative;
+      width: 100%; }
+      .home-banner .banner-menu-wrapper .banner-menu .nav-panel {
+        position: absolute;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 36%; }
+        .home-banner .banner-menu-wrapper .banner-menu .nav-panel.is-left {
+          left: 0; }
+        .home-banner .banner-menu-wrapper .banner-menu .nav-panel.is-right {
+          right: 0; }
+        .home-banner .banner-menu-wrapper .banner-menu .nav-panel .menu-item {
+          font-family: DINCondensed;
+          font-size: 18px;
+          color: #fff;
+          opacity: 0.6;
+          letter-spacing: 1.35px;
+          text-align: center; }
+          .home-banner .banner-menu-wrapper .banner-menu .nav-panel .menu-item:last-child {
+            margin-right: 0; }
+          .home-banner .banner-menu-wrapper .banner-menu .nav-panel .menu-item:hover {
+            opacity: 1; }
+      .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper {
+        margin: 0 90px;
+        min-width: 195px;
+        max-height: 54px;
+        overflow: hidden; }
+        .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper .page-logo img {
+          height: 48px;
+          width: auto; }
+          .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper .page-logo img:last-child {
+            opacity: 0; }
+    .home-banner .banner-menu-wrapper.is-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #fff;
+      z-index: 999;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+      .home-banner .banner-menu-wrapper.is-fixed .banner-menu {
+        margin: 0 90px;
         width: auto; }
+        .home-banner .banner-menu-wrapper.is-fixed .banner-menu .menu-item {
+          color: #222; }
+        .home-banner .banner-menu-wrapper.is-fixed .banner-menu .page-logo {
+          -webkit-transform: translateY(-13px);
+                  transform: translateY(-13px); }
+          .home-banner .banner-menu-wrapper.is-fixed .banner-menu .page-logo img {
+            height: 24px; }
+            .home-banner .banner-menu-wrapper.is-fixed .banner-menu .page-logo img:first-child {
+              opacity: 0; }
+            .home-banner .banner-menu-wrapper.is-fixed .banner-menu .page-logo img:last-child {
+              opacity: 1; }
 
 .home-why .about-snippet {
   max-width: 60%; }
