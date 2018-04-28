@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="588px" height="576px" viewBox="0 0 588 576" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Cross</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Facebook-Profile-Picture" transform="translate(-186.000000, -192.000000)" fill="#000000">
+            <g id="Cross" transform="translate(186.000000, 192.000000)">
+                <g>
+                    <path d="M60,60 L60,516 L528,516 L528,60 L60,60 Z M0,0 L588,0 L588,576 L0,576 L0,0 Z" id="bg" fill-rule="nonzero"></path>
+                    <g id="icn_cross" transform="translate(144.000000, 132.000000)" fill-rule="nonzero">
+                        <polygon id="Rectangle-5-Copy" points="269.684211 2.0588745 309.941125 42.3157895 42.3157895 309.941125 2.0588745 269.684211"></polygon>
+                        <polygon id="Rectangle-5-Copy-2" points="269.684211 309.941125 2.0588745 42.3157895 42.3157895 2.0588745 309.941125 269.684211"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
