@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="24px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Concept-2" transform="translate(-807.000000, -2047.000000)" fill="#222222" fill-rule="nonzero">
+            <g id="Project-Slides" transform="translate(-240.000000, 1482.000000)">
+                <g id="Slider-Controls" transform="translate(331.000000, 548.000000)">
+                    <g id="Active" transform="translate(537.000000, 11.000000)">
+                        <path d="M183.115137,18 L192.137114,8.92646877 C192.80278,8.25699855 192.80278,7.17157288 192.137114,6.50210266 C191.471447,5.83263245 190.392189,5.83263245 189.726523,6.50210266 L179.49925,16.7878169 C178.833583,17.4572872 178.833583,18.5427128 179.49925,19.2121831 L189.726523,29.4978973 C190.392189,30.1673676 191.471447,30.1673676 192.137114,29.4978973 C192.80278,28.8284271 192.80278,27.7430014 192.137114,27.0735312 L183.115137,18 Z" id="arrow-right" transform="translate(185.818182, 18.000000) scale(-1, 1) translate(-185.818182, -18.000000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

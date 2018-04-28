@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="btn/large" transform="translate(-226.000000, -20.000000)" fill="#FF706B" fill-rule="nonzero">
+            <path d="M229.65955,27.5888076 L233.950203,23.2675069 C234.254868,22.9606664 234.748826,22.9606664 235.05349,23.2675069 C235.358155,23.5743474 235.358155,24.0718342 235.05349,24.3786747 L230.211194,29.2555593 C230.058861,29.4089795 229.859206,29.4856897 229.65955,29.4856897 C229.459894,29.4856897 229.260239,29.4089795 229.107907,29.2555593 L224.228498,24.3412982 C223.923834,24.0344577 223.923834,23.5369709 224.228498,23.2301304 C224.533163,22.9232899 225.027121,22.9232899 225.331785,23.2301304 L229.65955,27.5888076 Z" id="Shape" transform="translate(229.640994, 26.242845) scale(-1, 1) rotate(90.000000) translate(-229.640994, -26.242845) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,8 +1,15 @@
+//Fonts
+@font-face { font-family: DINCondensed; src: url('../../assets/Fonts/d-din/D-DINCondensed.otf'); }
+
 //variables
+// colors
 $color-light: #fff;
 $color-dark: #222;
-// $color-primary: ;
-$color-accent: #EB6F7E;
+$color-accent: #FF706B;
+// fonts
+$font-opensans:"Open Sans";
+$font-din: DINCondensed;
+$font-lato: "Lato";
 
 //general styles
 html, body{
@@ -10,85 +17,154 @@ html, body{
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
   line-height: 1;
   font-weight: 400;
+  font-family: $font-opensans;
   *{
     box-sizing: border-box;
-  }
-}
-a{
-  color: $color-dark;
-  text-decoration: none !important;
-}
-
-//general classes
-.font-roboto{
-  font-family: 'Roboto', sans-serif;
-  line-height: 1;
-  letter-spacing: 1.2px;
-  font-weight: 400;
-}
-
-.launch-content{
-  font-family: "Montserrat";
-  color: #222;
-  font-weight: 400;
-  max-width: 60%;
-  margin: 0 auto;
-  @media screen and (max-width: 979px){
-    max-width: 90%;
-  }
-  p{
-    margin: 0;
+    transition: all 0.3s ease;
   }
   a{
-    font-weight: 500;
-    text-decoration: none;
-    position: relative;
-    &:after{
-      content: "";
-      position: absolute;
-      bottom: -4px;
-      right: 0;
-      height: 2px;
-      width: 100%;
-      background: transparent;
-      transition: all 0.3s ease;
-    }
+    color: $color-dark;
+    text-decoration: none !important;
     &:hover{
-      color: #222;
-      &:after{
-        background: #222;
-      }
+      color: $color-dark;
     }
   }
-  img{
-    height: 6vw;
-    @media screen and (max-width: 979px){
-      height: 16vw;
-    }
-  }
-  h4{
-    font-weight: 700;
-  }
-  .who{
-    width: 100%;
-    line-height: 1.4;
-    &.is-desktop{
+}
 
-    }
+//element styles
+.has-container{
+  margin: 0 90px;
+  z-index: 2;
+  position: relative;
+}
+section{
+  margin-bottom: 120px;
+}
+.divider{
+  margin-bottom: 120px;
+  background: url("../../assets/images/Logo/Cross - colors/black.svg") no-repeat center center;
+  background-size: 48px;
+  height: 48px;
+  opacity: 0.14;
+}
+.btn-accent{
+  font-family: $font-din;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: $color-dark;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 16px 36px 0 36px;
+  background: $color-light url(../../assets/images/Icons/icn_button-arrow.svg) no-repeat;
+  background-size: 10px;
+  background-position: 92% 19px;
+  border-radius: 2px;
+  box-shadow: none;
+  &:hover{
+    background-position: 94% 19px;
   }
-  .contact{
-    a:first-child{
-      margin-right: 16px;
-    }
-    @media screen and (max-width: 767px){
-      flex-direction: column;
-      a:first-child{
-        margin-right: 0px;
-        margin-bottom: 16px;
+}
+
+//specific styles
+.home-banner{
+  max-height: 732px;
+  height: 100%;
+  position: relative;
+  background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat center center;
+  background-size: cover;
+  &:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  .banner-title{
+    font-size: 70px;
+    font-family: $font-opensans;
+    font-weight: 600;
+    margin-top: 160px;
+    padding-top: 34px;
+    margin-bottom: 70px;
+    color: $color-light;
+    &>span{
+      &:first-child{
+        margin-bottom: 12px;
       }
     }
+  }
+  .icn_scrolldown{
+    margin-bottom: 180px;
+    img{
+      animation: scrollDown 1s linear infinite alternate;
+    }
+  }
+  .banner-menu{
+    position: relative;
+    width: 100%;
+    margin-bottom: 52px;
+    .nav-panel{
+      position: absolute;
+      justify-content: space-between;
+      width: 36%;
+      &.is-left{
+        left: 0;
+      }
+      &.is-right{
+        right: 0;
+      }
+      .menu-item{
+        font-family: $font-din;
+        font-size: 18px;
+        color: $color-light;
+        opacity: 0.6;
+        letter-spacing: 1.35px;
+        text-align: center;
+        &:last-child{
+          margin-right: 0;
+        }
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+    .page-logo-wrapper{
+      margin: 0 90px;
+      min-width: 195px;
+      max-height: 48px;
+      overflow: hidden;
+      .page-logo{
+        img{
+          height: 48px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+.home-why{
+  .about-snippet{
+    max-width: 60%;
+    span{
+      line-height: 1.8;
+    }
+  }
+}
+
+
+
+
+//animations
+@keyframes scrollDown {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(4px);
   }
 }
