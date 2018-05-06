@@ -9,6 +9,7 @@ $color-accent: #FF706B;
 // fonts
 $font-opensans:"Open Sans";
 $font-din: DINCondensed;
+$font-din-bold: DINCondensed-Bold;
 $font-lato: "Lato";
 
 //general styles
@@ -281,7 +282,7 @@ section{
   .section-header{
     margin-bottom: 86px;
     .section-title{
-      font-family: $font-din;
+      font-family: $font-din-bold;
       font-size: 30px;
       color: #222222;
       letter-spacing: 1.2px;
@@ -307,7 +308,7 @@ section{
       cursor: default;
       position: relative;
       .title{
-        font-family: $font-din;
+        font-family: $font-din-bold;
         font-size: 26px;
         color: #222222;
         letter-spacing: 1.3px;
@@ -345,7 +346,138 @@ section{
     }
   }
 }
-
+.home-contact{
+  .section-title{
+    font-family: $font-din-bold;
+    font-size: 30px;
+    color: #222222;
+    letter-spacing: 1.2px;
+    margin-bottom: 70px;
+  }
+  .section-content{
+    width: 100%;
+    .contact-form{
+      width: 40%;
+      input, textarea{
+        padding: 14px;
+        border: 1px solid rgba(34,34,34,0.30);
+        border-radius: 2px;
+        width: 100%;
+      }
+      textarea{
+        min-height: 200px;
+      }
+      .input-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 26px;
+        width: 100%;
+      }
+      .cta{
+        width: 100%;
+      }
+    }
+    .contact-details{
+      width: 40%;
+      .detail{
+        margin-bottom: 52px;
+        .title{
+          font-family: $font-din-bold;
+          font-size: 24px;
+          color: #222222;
+          letter-spacing: 1px;
+          position: relative;
+          &:after{
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 4px;
+            background: #FF706B;
+            left: 0%;
+            bottom: -8px;
+          }
+        }
+        .content{
+          margin-top: 16px;
+          p{
+            margin:0;
+            font-family: $font-opensans;
+            font-size: 16px;
+            color: #222222;
+            line-height: 26px;
+          }
+          a{
+            font-family: $font-opensans;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+footer{
+  background: $color-dark;
+  color: #fff;
+  .has-container{
+    padding: 90px 0;
+    &>div{
+      width: 100%;
+      max-width: 30%;
+    }
+    .left-panel{
+      .menu-items{
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 200px;
+        margin: 0 0 -24px 0;
+        .menu-item{
+          font-family: $font-opensans;
+          font-size: 18px;
+          color: #FFFFFF;
+          margin-bottom: 24px;
+          margin-right: 90px;
+          text-transform: capitalize;
+          font-weight: 300;
+        }
+      }
+    }
+    .middle-panel{
+      flex-direction: column;
+      img{
+        height: 60px;
+      }
+      span{
+        font-family: $font-opensans;
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-top: 28px;
+        font-weight: 300;
+      }
+    }
+    .right-panel{
+      .title{
+        font-family: $font-opensans;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 26px;
+      }
+      .content{
+        a{
+          font-family: $font-opensans;
+          font-weight: 300;
+          font-size: 16px;
+          color: #FFFFFF;
+          line-height: 22px;
+        }
+      }
+      .contact-business{
+        margin-bottom: 28px;
+      }
+    }
+  }
+}
 
 
 

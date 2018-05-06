@@ -223,7 +223,7 @@ section {
 .home-services .section-header {
   margin-bottom: 86px; }
   .home-services .section-header .section-title {
-    font-family: DINCondensed;
+    font-family: DINCondensed-Bold;
     font-size: 30px;
     color: #222222;
     letter-spacing: 1.2px;
@@ -246,7 +246,7 @@ section {
   cursor: default;
   position: relative; }
   .home-services .section-content .service .title {
-    font-family: DINCondensed;
+    font-family: DINCondensed-Bold;
     font-size: 26px;
     color: #222222;
     letter-spacing: 1.3px;
@@ -279,6 +279,124 @@ section {
     width: 100%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
+
+.home-contact .section-title {
+  font-family: DINCondensed-Bold;
+  font-size: 30px;
+  color: #222222;
+  letter-spacing: 1.2px;
+  margin-bottom: 70px; }
+
+.home-contact .section-content {
+  width: 100%; }
+  .home-contact .section-content .contact-form {
+    width: 40%; }
+    .home-contact .section-content .contact-form input, .home-contact .section-content .contact-form textarea {
+      padding: 14px;
+      border: 1px solid rgba(34, 34, 34, 0.3);
+      border-radius: 2px;
+      width: 100%; }
+    .home-contact .section-content .contact-form textarea {
+      min-height: 200px; }
+    .home-contact .section-content .contact-form .input-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      margin-bottom: 26px;
+      width: 100%; }
+    .home-contact .section-content .contact-form .cta {
+      width: 100%; }
+  .home-contact .section-content .contact-details {
+    width: 40%; }
+    .home-contact .section-content .contact-details .detail {
+      margin-bottom: 52px; }
+      .home-contact .section-content .contact-details .detail .title {
+        font-family: DINCondensed-Bold;
+        font-size: 24px;
+        color: #222222;
+        letter-spacing: 1px;
+        position: relative; }
+        .home-contact .section-content .contact-details .detail .title:after {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 4px;
+          background: #FF706B;
+          left: 0%;
+          bottom: -8px; }
+      .home-contact .section-content .contact-details .detail .content {
+        margin-top: 16px; }
+        .home-contact .section-content .contact-details .detail .content p {
+          margin: 0;
+          font-family: "Open Sans";
+          font-size: 16px;
+          color: #222222;
+          line-height: 26px; }
+        .home-contact .section-content .contact-details .detail .content a {
+          font-family: "Open Sans";
+          font-weight: 600; }
+
+footer {
+  background: #222;
+  color: #fff; }
+  footer .has-container {
+    padding: 90px 0; }
+    footer .has-container > div {
+      width: 100%;
+      max-width: 30%; }
+    footer .has-container .left-panel .menu-items {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      max-height: 200px;
+      margin: 0 0 -24px 0; }
+      footer .has-container .left-panel .menu-items .menu-item {
+        font-family: "Open Sans";
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+        margin-right: 90px;
+        text-transform: capitalize;
+        font-weight: 300; }
+    footer .has-container .middle-panel {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      footer .has-container .middle-panel img {
+        height: 60px; }
+      footer .has-container .middle-panel span {
+        font-family: "Open Sans";
+        font-size: 18px;
+        color: #FFFFFF;
+        margin-top: 28px;
+        font-weight: 300; }
+    footer .has-container .right-panel .title {
+      font-family: "Open Sans";
+      font-size: 16px;
+      color: #FFFFFF;
+      line-height: 26px; }
+    footer .has-container .right-panel .content a {
+      font-family: "Open Sans";
+      font-weight: 300;
+      font-size: 16px;
+      color: #FFFFFF;
+      line-height: 22px; }
+    footer .has-container .right-panel .contact-business {
+      margin-bottom: 28px; }
 
 @-webkit-keyframes scrollDown {
   0% {
