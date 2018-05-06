@@ -350,7 +350,7 @@ footer {
   background: #222;
   color: #fff; }
   footer > .has-container {
-    padding: 90px 0; }
+    padding: 90px 0 130px 0; }
     footer > .has-container > div {
       width: 100%;
       max-width: 30%; }
@@ -377,12 +377,12 @@ footer {
           -ms-flex-direction: column;
               flex-direction: column; }
       footer > .has-container .middle-panel img {
-        height: 60px; }
+        height: 40px; }
       footer > .has-container .middle-panel span {
         font-family: "Open Sans";
         font-size: 18px;
         color: #FFFFFF;
-        margin-top: 28px;
+        margin-top: 18px;
         font-weight: 300; }
     footer > .has-container .right-panel .title {
       font-family: "Open Sans";

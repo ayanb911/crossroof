@@ -421,7 +421,7 @@ footer{
   background: $color-dark;
   color: #fff;
   &>.has-container{
-    padding: 90px 0;
+    padding: 90px 0 130px 0;
     &>div{
       width: 100%;
       max-width: 30%;
@@ -446,13 +446,13 @@ footer{
     .middle-panel{
       flex-direction: column;
       img{
-        height: 60px;
+        height: 40px;
       }
       span{
         font-family: $font-opensans;
         font-size: 18px;
         color: #FFFFFF;
-        margin-top: 28px;
+        margin-top: 18px;
         font-weight: 300;
       }
     }
