@@ -420,7 +420,7 @@ section{
 footer{
   background: $color-dark;
   color: #fff;
-  .has-container{
+  &>.has-container{
     padding: 90px 0;
     &>div{
       width: 100%;
@@ -469,11 +469,26 @@ footer{
           font-weight: 300;
           font-size: 16px;
           color: #FFFFFF;
-          line-height: 22px;
+          &:first-child{
+            margin: 4px 0 12px 0;
+          }
         }
       }
       .contact-business{
         margin-bottom: 28px;
+      }
+    }
+  }
+  .sub-footer{
+    background: rgba(255, 255, 255, 0.1);
+    height: 90px;
+    .crosses{
+      width: max-content;
+      margin-right: -16px;
+      opacity: 0.6;
+      img{
+        height: 32px;
+        margin-right: 16px;
       }
     }
   }

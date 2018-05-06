@@ -349,12 +349,12 @@ section {
 footer {
   background: #222;
   color: #fff; }
-  footer .has-container {
+  footer > .has-container {
     padding: 90px 0; }
-    footer .has-container > div {
+    footer > .has-container > div {
       width: 100%;
       max-width: 30%; }
-    footer .has-container .left-panel .menu-items {
+    footer > .has-container .left-panel .menu-items {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -363,7 +363,7 @@ footer {
           flex-wrap: wrap;
       max-height: 200px;
       margin: 0 0 -24px 0; }
-      footer .has-container .left-panel .menu-items .menu-item {
+      footer > .has-container .left-panel .menu-items .menu-item {
         font-family: "Open Sans";
         font-size: 18px;
         color: #FFFFFF;
@@ -371,32 +371,45 @@ footer {
         margin-right: 90px;
         text-transform: capitalize;
         font-weight: 300; }
-    footer .has-container .middle-panel {
+    footer > .has-container .middle-panel {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      footer .has-container .middle-panel img {
+      footer > .has-container .middle-panel img {
         height: 60px; }
-      footer .has-container .middle-panel span {
+      footer > .has-container .middle-panel span {
         font-family: "Open Sans";
         font-size: 18px;
         color: #FFFFFF;
         margin-top: 28px;
         font-weight: 300; }
-    footer .has-container .right-panel .title {
+    footer > .has-container .right-panel .title {
       font-family: "Open Sans";
       font-size: 16px;
       color: #FFFFFF;
       line-height: 26px; }
-    footer .has-container .right-panel .content a {
+    footer > .has-container .right-panel .content a {
       font-family: "Open Sans";
       font-weight: 300;
       font-size: 16px;
-      color: #FFFFFF;
-      line-height: 22px; }
-    footer .has-container .right-panel .contact-business {
+      color: #FFFFFF; }
+      footer > .has-container .right-panel .content a:first-child {
+        margin: 4px 0 12px 0; }
+    footer > .has-container .right-panel .contact-business {
       margin-bottom: 28px; }
+  footer .sub-footer {
+    background: rgba(255, 255, 255, 0.1);
+    height: 90px; }
+    footer .sub-footer .crosses {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      margin-right: -16px;
+      opacity: 0.6; }
+      footer .sub-footer .crosses img {
+        height: 32px;
+        margin-right: 16px; }
 
 @-webkit-keyframes scrollDown {
   0% {
