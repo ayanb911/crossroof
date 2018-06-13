@@ -235,6 +235,7 @@ section{
         opacity: 0;
         left: 50%;
         transform: translate(-50%, -50%);
+        transition: opacity 1.2s ease;
       }
     }
 

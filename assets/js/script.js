@@ -11,6 +11,14 @@ $(document).ready(function(){
     }
   })
 
+  //scroll
+  $("[data-target]").click(function(){
+    var elementClass = "."+$(this).attr("data-target");
+    $('html, body').animate({
+      scrollTop: $(elementClass).offset().top - 88
+    }, 1000);
+  })
+
   //project slider
   $(".owl-carousel.project-images").owlCarousel({
     items:1,

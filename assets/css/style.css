@@ -179,7 +179,8 @@ section {
         opacity: 0;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%); }
+                transform: translate(-50%, -50%);
+        transition: opacity 1.2s ease; }
     .home-projects .project-names .owl-stage {
       min-height: 42px;
       display: -webkit-box;
