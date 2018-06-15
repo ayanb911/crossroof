@@ -130,6 +130,7 @@ section{
           opacity: 0.6;
           letter-spacing: 1.35px;
           text-align: center;
+          cursor: pointer;
           &:last-child{
             margin-right: 0;
           }
@@ -279,7 +280,7 @@ section{
     }
   }
 }
-.home-services{
+.home-process, .home-services{
   .section-header{
     margin-bottom: 86px;
     .section-title{
@@ -334,7 +335,8 @@ section{
         text-align: center;
         line-height: 32px;
         font-weight: 300;
-        margin: 0 auto 92px auto;
+        //margin: 0 auto 92px auto;
+        margin: 0 auto;
         max-width: 89%;
       }
       .cta{
@@ -347,7 +349,9 @@ section{
     }
   }
 }
-.home-contact{
+.home-contact, .home-blog{
+  max-width: 46%;
+  width: 100%;
   .section-title{
     font-family: $font-din-bold;
     font-size: 30px;
@@ -358,7 +362,7 @@ section{
   .section-content{
     width: 100%;
     .contact-form{
-      width: 40%;
+      //width: 40%;
       input, textarea{
         padding: 14px;
         border: 1px solid rgba(34,34,34,0.30);
@@ -381,7 +385,6 @@ section{
       }
     }
     .contact-details{
-      width: 40%;
       .detail{
         margin-bottom: 52px;
         .title{
@@ -414,6 +417,41 @@ section{
             font-weight: 600;
           }
         }
+        &.detail-fast{
+          a{
+            padding: 2px 6px;
+            color: #fff;
+            background: $color-dark;
+            position: relative;
+            top: 0;
+            &:hover{
+              top: -2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.home-blog{
+  .blog-list{
+    .blog{
+      padding: 32px 26px;
+      margin-bottom: 24px;
+      max-width: 100%;
+      border: 1px solid rgba(34, 34, 34, 0.1);
+      box-shadow: none;
+      .title{
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+      }
+      .content{
+        font-size: 14px;
+        line-height: 22px;
+      }
+      &:hover{
+        box-shadow: 0 0px 4px rgba(0,0,0,0.1);
       }
     }
   }
@@ -441,6 +479,7 @@ footer{
           margin-right: 90px;
           text-transform: capitalize;
           font-weight: 300;
+          cursor: pointer;
         }
       }
     }
