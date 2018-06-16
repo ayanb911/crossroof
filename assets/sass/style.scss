@@ -103,7 +103,7 @@ section{
     margin-bottom: 180px;
     z-index: 2;
     img{
-      animation: scrollDown 1s linear infinite alternate;
+      animation: scrollDown 1.3s ease-in-out infinite alternate;
     }
   }
   .banner-menu-wrapper{
@@ -178,12 +178,6 @@ section{
       }
     }
   }
-  // .banner-menu-wrapper{
-  //   img{
-  //     height: 48px;
-  //   }
-  // }
-
 }
 .home-why{
   .about-snippet{

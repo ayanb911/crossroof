@@ -78,8 +78,8 @@ section {
     margin-bottom: 180px;
     z-index: 2; }
     .home-banner .icn_scrolldown img {
-      -webkit-animation: scrollDown 1s linear infinite alternate;
-              animation: scrollDown 1s linear infinite alternate; }
+      -webkit-animation: scrollDown 1.3s ease-in-out infinite alternate;
+              animation: scrollDown 1.3s ease-in-out infinite alternate; }
   .home-banner .banner-menu-wrapper {
     width: 100%;
     background: transparent;
