@@ -112,7 +112,7 @@ section{
     z-index: 2;
     .banner-menu{
       position: relative;
-      width: 100%;
+      max-width: 100%;
       .nav-panel{
         position: absolute;
         justify-content: space-between;
@@ -144,12 +144,16 @@ section{
         min-width: 195px;
         max-height: 54px;
         overflow: hidden;
+        position: relative;
+        top: -4px;
         .page-logo{
           img{
             height: 48px;
             width: auto;
+            margin-bottom: 24px;
             &:last-child{
-              opacity: 0;
+              height: 28px;
+              margin-bottom: 0;
             }
           }
         }
@@ -169,16 +173,7 @@ section{
           color: $color-dark;
         }
         .page-logo{
-          transform: translateY(-13px);
-          img{
-            height: 24px;
-            &:first-child{
-              opacity: 0;
-            }
-            &:last-child{
-              opacity: 1;
-            }
-          }
+          transform: translateY(-55px);
         }
       }
     }
