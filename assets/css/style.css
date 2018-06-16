@@ -44,7 +44,8 @@ section {
   background-size: 10px;
   background-position: 92% 19px;
   border-radius: 2px;
-  box-shadow: none; }
+  box-shadow: none;
+  cursor: pointer; }
   .btn-accent:hover {
     background-position: 94% 19px; }
 
