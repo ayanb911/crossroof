@@ -148,6 +148,7 @@ section{
         position: relative;
         top: -4px;
         .page-logo{
+          transition: transform .7s ease;
           img{
             height: 48px;
             width: auto;
@@ -193,7 +194,16 @@ section{
   .project-images{
     .project-img{
       height: 530px;
-      background: grey;
+      background-size: cover !important;
+      position: relative;
+      a{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+      }
     }
 
     //owl carousel styles
@@ -205,6 +215,11 @@ section{
           top: 0;
           &:not(.active){
             top: 50px;
+            .project-img{
+              a{
+                display: none;
+              }
+            }
           }
         }
       }
@@ -260,7 +275,7 @@ section{
       transform: translate(-50%, -50%);
       height: 24px;
       justify-content: space-between;
-      width: 220px;
+      width: 250px;
       z-index: 1;
       .owl-prev, .owl-next{
         color: transparent;

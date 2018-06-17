@@ -117,13 +117,17 @@ section {
         overflow: hidden;
         position: relative;
         top: -4px; }
-        .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper .page-logo img {
-          height: 48px;
-          width: auto;
-          margin-bottom: 24px; }
-          .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper .page-logo img:last-child {
-            height: 28px;
-            margin-bottom: 0; }
+        .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper .page-logo {
+          transition: -webkit-transform .7s ease;
+          transition: transform .7s ease;
+          transition: transform .7s ease, -webkit-transform .7s ease; }
+          .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper .page-logo img {
+            height: 48px;
+            width: auto;
+            margin-bottom: 24px; }
+            .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper .page-logo img:last-child {
+              height: 28px;
+              margin-bottom: 0; }
     .home-banner .banner-menu-wrapper.is-fixed {
       position: fixed;
       top: 0;
@@ -149,7 +153,15 @@ section {
   overflow-x: hidden; }
   .home-projects .project-images .project-img {
     height: 530px;
-    background: grey; }
+    background-size: cover !important;
+    position: relative; }
+    .home-projects .project-images .project-img a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 2; }
   .home-projects .project-images .owl-stage-outer {
     overflow: visible; }
     .home-projects .project-images .owl-stage-outer .owl-stage .owl-item {
@@ -157,6 +169,8 @@ section {
       top: 0; }
       .home-projects .project-images .owl-stage-outer .owl-stage .owl-item:not(.active) {
         top: 50px; }
+        .home-projects .project-images .owl-stage-outer .owl-stage .owl-item:not(.active) .project-img a {
+          display: none; }
   .home-projects .project-names {
     max-width: 80%;
     margin: 18px auto 0 auto; }
@@ -208,7 +222,7 @@ section {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      width: 220px;
+      width: 250px;
       z-index: 1; }
       .home-projects .project-names .owl-nav .owl-prev, .home-projects .project-names .owl-nav .owl-next {
         color: transparent;

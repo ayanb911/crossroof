@@ -19,7 +19,16 @@ $(document).ready(function(){
     }, 1000);
   })
 
-  //project slider
+  //--project slider
+
+  //border_color
+  $(".project-img[data-border]").each(function(){
+    var border_color = "2px solid "+$(this).attr("data-border");
+    $(this).css("border", border_color);
+  })
+
+
+  //owl carousel
   $(".owl-carousel.project-images").owlCarousel({
     items:1,
     loop:true,
@@ -48,5 +57,9 @@ $(document).ready(function(){
   $(".owl-carousel.project-names .owl-nav>.owl-prev").click(function(){
     projectImageSlider.trigger('prev.owl.carousel');
   })
+
+  $('.owl-carousel').on('changed.owl.carousel', function(event) {
+    console.log(event);
+  });
 
 })
