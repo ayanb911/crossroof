@@ -384,9 +384,23 @@ section{
         .service-descs{
           .service-desc{
             .title{
-              font-size: 52px;
-              font-weight: 600;
-              margin-bottom: 24px;
+              font-family: $font-din-bold;
+              font-size: 26px;
+              color: #222222;
+              letter-spacing: 1.3px;
+              position: relative;
+              margin-bottom: 34px;
+              text-transform: uppercase;
+              width: max-content;
+              &:after{
+                content: "";
+                position: absolute;
+                width: 40px;
+                height: 4px;
+                background: #FF706B;
+                left: 0;
+                bottom: -12px;
+              }
             }
             .desc{
               font-size: 16px;
@@ -417,7 +431,7 @@ section{
             transform: translate(-50%, -50%);
             height: 24px;
             justify-content: space-between;
-            width: 100%;
+            width: 120%;
             z-index: 1;
             .owl-prev, .owl-next{
               color: transparent;

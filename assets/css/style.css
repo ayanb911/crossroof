@@ -314,9 +314,24 @@ section {
       max-width: 70%;
       padding: 42px; }
       .home-services .section-content .service-slider .content .service-descs .service-desc .title {
-        font-size: 52px;
-        font-weight: 600;
-        margin-bottom: 24px; }
+        font-family: DINCondensed-Bold;
+        font-size: 26px;
+        color: #222222;
+        letter-spacing: 1.3px;
+        position: relative;
+        margin-bottom: 34px;
+        text-transform: uppercase;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content; }
+        .home-services .section-content .service-slider .content .service-descs .service-desc .title:after {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 4px;
+          background: #FF706B;
+          left: 0;
+          bottom: -12px; }
       .home-services .section-content .service-slider .content .service-descs .service-desc .desc {
         font-size: 16px;
         line-height: 30px; }
@@ -346,7 +361,7 @@ section {
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between;
-          width: 100%;
+          width: 120%;
           z-index: 1; }
           .home-services .section-content .service-slider .content .service-names .owl-nav .owl-prev, .home-services .section-content .service-slider .content .service-names .owl-nav .owl-next {
             color: transparent;
