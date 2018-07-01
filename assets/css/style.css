@@ -467,9 +467,20 @@ footer {
   color: #fff; }
   footer > .has-container {
     padding: 90px 0 130px 0; }
+    @media screen and (max-width: 1199.98px) {
+      footer > .has-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     footer > .has-container > div {
-      width: 100%;
-      max-width: 30%; }
+      width: 100%; }
+      @media screen and (min-width: 1200px) {
+        footer > .has-container > div {
+          max-width: 30%; } }
+      @media screen and (max-width: 1199.98px) {
+        footer > .has-container > div {
+          margin-bottom: 24px; } }
     footer > .has-container .left-panel .menu-items {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

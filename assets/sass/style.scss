@@ -11,6 +11,9 @@ $font-opensans:"Open Sans";
 $font-din: DINCondensed;
 $font-din-bold: DINCondensed-Bold;
 $font-lato: "Lato";
+// screens
+$mxw-size: 1199.98px;
+$mnw-size: 1200px;
 
 //general styles
 html, body{
@@ -38,6 +41,9 @@ body{
 .has-container{
   margin: 0 90px;
   position: relative;
+  @media screen and (max-width: 979px){
+    
+  }
 }
 section{
   margin-bottom: 120px;
@@ -562,9 +568,17 @@ footer{
   color: #fff;
   &>.has-container{
     padding: 90px 0 130px 0;
+    @media screen and (max-width: $mxw-size){
+      flex-direction: column;
+    }
     &>div{
       width: 100%;
-      max-width: 30%;
+      @media screen and (min-width: $mnw-size){
+        max-width: 30%;
+      }
+      @media screen and (max-width: $mxw-size){
+        margin-bottom: 24px;
+      }
     }
     .left-panel{
       .menu-items{
