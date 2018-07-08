@@ -42,7 +42,7 @@ body{
   margin: 0 90px;
   position: relative;
   @media screen and (max-width: 979px){
-    
+
   }
 }
 section{
@@ -92,19 +92,12 @@ section{
     z-index: 1;
   }
   .banner-title{
-    font-size: 70px;
     font-family: $font-opensans;
-    font-weight: 600;
     margin-top: 160px;
     padding-top: 34px;
     margin-bottom: 70px;
     color: $color-light;
     z-index: 2;
-    &>span{
-      &:first-child{
-        margin-bottom: 12px;
-      }
-    }
   }
   .icn_scrolldown{
     margin-bottom: 180px;
