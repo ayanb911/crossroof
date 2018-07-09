@@ -134,9 +134,8 @@ section {
       max-width: 100%; }
       .home-banner .banner-menu-wrapper .banner-menu .nav-panel {
         position: absolute;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         width: 36%; }
         .home-banner .banner-menu-wrapper .banner-menu .nav-panel.is-left {
           left: 0; }
