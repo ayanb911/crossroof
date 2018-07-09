@@ -1,6 +1,27 @@
 $(document).ready(function(){
 
-  //header
+  //header button
+  var slideElem = $("a.is-header-cta .btn-options .wrapper");
+  var slideItems = slideElem.find("span");
+  var itemLimit = $(slideItems).length;
+  var slideLength = "";
+  var i = 1;
+  setInterval(function(){
+    slideLength = slideElem.attr("data-slidelength");
+    slideElem.css("transform", "translateY(-"+ slideLength +"px)");
+    if((i+1) <= itemLimit){
+        slideElem.attr("data-slidelength", parseInt(slideLength)+36);
+    }
+    else{
+      slideElem.attr("data-slidelength", 36);
+      slideElem.css("transform", "translateY(0px)");
+      i=0;
+    }
+    //console.log(i, slideLength);
+    i++;
+  }, 1200)
+
+  //header logo
   $(window).on("scroll", function(){
     var distanceToHeader = $(window).scrollTop() - ($(".home-banner").height() - 100);
     if(distanceToHeader >= 0){
@@ -11,7 +32,7 @@ $(document).ready(function(){
     }
   })
 
-  //scroll
+  //link scroll
   $("[data-target]").click(function(){
     var elementClass = "."+$(this).attr("data-target");
     $('html, body').animate({

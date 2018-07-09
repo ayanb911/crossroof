@@ -96,8 +96,53 @@ section{
     margin-top: 160px;
     padding-top: 34px;
     margin-bottom: 70px;
-    color: $color-light;
     z-index: 2;
+    a.btn-accent{
+      position: relative;
+      max-width: max-content;
+      z-index: 2;
+      padding: 18px 56px 18px 28px;
+      display: flex;
+      background-position: 90% 21px;
+      .btn-options{
+        height: 24px;
+        min-width: 100px;
+        margin-left: 6px;
+        overflow: hidden;
+        .wrapper{
+          display: flex;
+          flex-direction: column;
+          transform: translateY(0);
+          transition: all .7s ease-in-out;
+          span{
+            margin-bottom: 12px;
+            text-align: left;
+            &:last-child{
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      &:after{
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: -12px;
+        border: 1px solid #fff;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+    }
+    .subtext{
+      font-size: 12px;
+      margin-top: 24px;
+      color: #fff;
+      font-weight: 100;
+      letter-spacing: .7px;
+      opacity: .6;
+    }
   }
   .icn_scrolldown{
     margin-bottom: 180px;
