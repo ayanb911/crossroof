@@ -136,7 +136,10 @@ section {
         position: absolute;
         -ms-flex-pack: distribute;
             justify-content: space-around;
-        width: 36%; }
+        width: 36%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         .home-banner .banner-menu-wrapper .banner-menu .nav-panel.is-left {
           left: 0; }
         .home-banner .banner-menu-wrapper .banner-menu .nav-panel.is-right {
@@ -153,6 +156,14 @@ section {
             margin-right: 0; }
           .home-banner .banner-menu-wrapper .banner-menu .nav-panel .menu-item:hover {
             opacity: 1; }
+          .home-banner .banner-menu-wrapper .banner-menu .nav-panel .menu-item.is-menu-client {
+            padding: 8px 12px;
+            border: 1px solid #FF706B;
+            opacity: 1; }
+            .home-banner .banner-menu-wrapper .banner-menu .nav-panel .menu-item.is-menu-client:hover {
+              background: rgba(0, 0, 0, 0.4);
+              -webkit-transform: translateY(-2px);
+                      transform: translateY(-2px); }
       .home-banner .banner-menu-wrapper .banner-menu .page-logo-wrapper {
         margin: 0 90px;
         min-width: 195px;
@@ -175,14 +186,14 @@ section {
       position: fixed;
       top: 0;
       left: 0;
-      background: #fff;
+      background: #222;
       z-index: 999;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
       .home-banner .banner-menu-wrapper.is-fixed .banner-menu {
         margin: 0 90px;
         width: auto; }
         .home-banner .banner-menu-wrapper.is-fixed .banner-menu .menu-item {
-          color: #222; }
+          color: #fff; }
         .home-banner .banner-menu-wrapper.is-fixed .banner-menu .page-logo {
           -webkit-transform: translateY(-55px);
                   transform: translateY(-55px); }
