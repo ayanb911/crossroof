@@ -8,7 +8,8 @@ html, body {
 body {
   line-height: 1;
   font-weight: 400;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  background: #222; }
   body * {
     box-sizing: border-box;
     transition: all 0.3s ease; }
@@ -194,14 +195,45 @@ section {
         width: auto; }
         .home-banner .banner-menu-wrapper.is-fixed .banner-menu .menu-item {
           color: #fff; }
+          .home-banner .banner-menu-wrapper.is-fixed .banner-menu .menu-item.is-menu-client:hover {
+            -webkit-transform: translateY(0);
+                    transform: translateY(0);
+            -webkit-transform: translateX(4px);
+                    transform: translateX(4px); }
         .home-banner .banner-menu-wrapper.is-fixed .banner-menu .page-logo {
           -webkit-transform: translateY(-55px);
                   transform: translateY(-55px); }
 
 .home-why .about-snippet {
-  max-width: 60%; }
-  .home-why .about-snippet span {
-    line-height: 1.8; }
+  max-width: 60%;
+  margin: 0 auto; }
+  .home-why .about-snippet .tags {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 48px; }
+    .home-why .about-snippet .tags .tag {
+      font-family: DINCondensed;
+      font-size: 36px;
+      color: #FF706B;
+      letter-spacing: 1.4px;
+      margin-right: 42px;
+      position: relative; }
+      .home-why .about-snippet .tags .tag:last-child {
+        margin-right: 0; }
+        .home-why .about-snippet .tags .tag:last-child:after {
+          display: none; }
+  .home-why .about-snippet .subtext {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px; }
 
 .home-projects {
   overflow-x: hidden; }

@@ -24,6 +24,7 @@ body{
   line-height: 1;
   font-weight: 400;
   font-family: $font-opensans;
+  background: $color-dark;
   *{
     box-sizing: border-box;
     transition: all 0.3s ease;
@@ -227,6 +228,12 @@ section{
         width: auto;
         .menu-item{
           color: $color-light;
+          &.is-menu-client{
+            &:hover{
+              transform: translateY(0);
+              transform: translateX(4px);
+            }
+          }
         }
         .page-logo{
           transform: translateY(-55px);
@@ -238,8 +245,44 @@ section{
 .home-why{
   .about-snippet{
     max-width: 60%;
-    span{
-      line-height: 1.8;
+    margin: 0 auto;
+    .tags{
+      justify-content: space-between;
+      align-items: center;
+      max-width: 90%;
+      margin: 0 auto;
+      margin-bottom: 48px;
+      .tag{
+        font-family: $font-din;
+        font-size: 36px;
+        color: $color-accent;
+        letter-spacing: 1.4px;
+        margin-right: 42px;
+        position: relative;
+        &:last-child{
+          margin-right: 0;
+          &:after{
+            display: none;
+          }
+        }
+        // &:after{
+        //   position: absolute;
+        //   content: "";
+        //   height: 2px;
+        //   width: 20px;
+        //   background: $color-accent;
+        //   top: 50%;
+        //   right: -20px;
+        //   transform: translate(-10%, -50%);
+        // }
+      }
+    }
+    .subtext{
+      font-family: $font-opensans;
+      font-size: 16px;
+      color: $color-light;
+      text-align: center;
+      line-height: 32px;
     }
   }
 }
