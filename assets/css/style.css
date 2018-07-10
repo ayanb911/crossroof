@@ -20,7 +20,7 @@ body {
       color: #222; }
 
 .has-container {
-  margin: 0 90px;
+  margin: 0 140px;
   position: relative; }
 
 section {
@@ -135,9 +135,10 @@ section {
       max-width: 100%; }
       .home-banner .banner-menu-wrapper .banner-menu .nav-panel {
         position: absolute;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-        width: 36%;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 32%;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
@@ -191,7 +192,7 @@ section {
       z-index: 999;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
       .home-banner .banner-menu-wrapper.is-fixed .banner-menu {
-        margin: 0 90px;
+        margin: 0 140px;
         width: auto; }
         .home-banner .banner-menu-wrapper.is-fixed .banner-menu .menu-item {
           color: #fff; }
@@ -323,21 +324,23 @@ section {
         -webkit-transform: rotate(-180deg);
                 transform: rotate(-180deg); }
 
-.home-process .section-content .service, .home-services .section-content .service {
-  max-width: 30%;
+.home-process .section-content .service {
+  max-width: 32%;
+  width: 100%;
   background: transparent;
-  padding: 32px 20px;
+  padding: 32px 0;
   cursor: default;
   position: relative; }
-  .home-process .section-content .service .title, .home-services .section-content .service .title {
-    font-family: DINCondensed-Bold;
+  .home-process .section-content .service .title {
+    font-family: DINCondensed;
     font-size: 26px;
     color: #fff;
     letter-spacing: 1.3px;
     text-align: center;
     position: relative;
-    margin-bottom: 30px; }
-    .home-process .section-content .service .title:after, .home-services .section-content .service .title:after {
+    margin-bottom: 30px;
+    text-transform: uppercase; }
+    .home-process .section-content .service .title:after {
       content: "";
       position: absolute;
       width: 40px;
@@ -347,9 +350,10 @@ section {
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0);
       bottom: -12px; }
-  .home-process .section-content .service .content, .home-services .section-content .service .content {
+  .home-process .section-content .service .content {
     font-family: "Open Sans";
     font-weight: 100;
+    letter-spacing: .4px;
     font-size: 16px;
     color: #fff;
     text-align: center;
