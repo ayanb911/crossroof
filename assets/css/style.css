@@ -28,10 +28,10 @@ section {
 
 .divider {
   margin-bottom: 120px;
-  background: url("../../assets/images/Logo/Cross - colors/black.svg") no-repeat center center;
+  background: url("../../assets/images/Logo/Cross - colors/white.svg") no-repeat center center;
   background-size: 48px;
   height: 48px;
-  opacity: 0.14; }
+  opacity: 0.08; }
 
 .btn-accent {
   font-family: DINCondensed;
@@ -233,7 +233,9 @@ section {
     font-size: 16px;
     color: #fff;
     text-align: center;
-    line-height: 32px; }
+    line-height: 32px;
+    font-weight: lighter;
+    letter-spacing: 0.4px; }
 
 .home-projects {
   overflow-x: hidden; }
@@ -321,39 +323,20 @@ section {
         -webkit-transform: rotate(-180deg);
                 transform: rotate(-180deg); }
 
-.home-process .section-header, .home-services .section-header {
-  margin-bottom: 86px; }
-  .home-process .section-header .section-title, .home-services .section-header .section-title {
-    font-family: DINCondensed-Bold;
-    font-size: 30px;
-    color: #222222;
-    letter-spacing: 1.2px;
-    margin-bottom: 42px; }
-  .home-process .section-header .section-sub-title, .home-services .section-header .section-sub-title {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 16px;
-    color: #222222;
-    text-align: center;
-    line-height: 24px;
-    max-width: 600px;
-    margin: 0 auto; }
-
 .home-process .section-content .service, .home-services .section-content .service {
   max-width: 30%;
-  background: #FFFFFF;
-  border: 1px solid rgba(34, 34, 34, 0.1);
-  padding: 32px 40px;
+  background: transparent;
+  padding: 32px 20px;
   cursor: default;
   position: relative; }
   .home-process .section-content .service .title, .home-services .section-content .service .title {
     font-family: DINCondensed-Bold;
     font-size: 26px;
-    color: #222222;
+    color: #fff;
     letter-spacing: 1.3px;
     text-align: center;
     position: relative;
-    margin-bottom: 44px; }
+    margin-bottom: 30px; }
     .home-process .section-content .service .title:after, .home-services .section-content .service .title:after {
       content: "";
       position: absolute;
@@ -366,20 +349,13 @@ section {
       bottom: -12px; }
   .home-process .section-content .service .content, .home-services .section-content .service .content {
     font-family: "Open Sans";
-    font-size: 17px;
-    color: #222222;
+    font-weight: 100;
+    font-size: 16px;
+    color: #fff;
     text-align: center;
     line-height: 32px;
     font-weight: 300;
-    margin: 0 auto;
-    max-width: 89%; }
-  .home-process .section-content .service .cta, .home-services .section-content .service .cta {
-    position: absolute;
-    bottom: 32px;
-    left: 50%;
-    width: 100%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0); }
+    margin: 0 auto; }
 
 .home-services .section-content {
   width: 100%; }
