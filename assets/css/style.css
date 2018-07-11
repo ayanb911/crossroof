@@ -18,6 +18,9 @@ body {
     text-decoration: none !important; }
     body a:hover {
       color: #222; }
+  @media screen and (max-width: 1199.98px) {
+    body .desktop-only {
+      display: none; } }
   body .mobile-only {
     display: none; }
     @media screen and (max-width: 1199.98px) {
@@ -74,7 +77,6 @@ section {
     background-position: 92% 19px; }
 
 .home-banner {
-  max-height: 732px;
   height: 100%;
   position: relative;
   background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat 0 0;
@@ -110,6 +112,9 @@ section {
       display: -ms-flexbox;
       display: flex;
       background-position: 90% 21px; }
+      @media screen and (max-width: 1199.98px) {
+        .home-banner .banner-title a.btn-accent {
+          padding-right: 40px; } }
       .home-banner .banner-title a.btn-accent .btn-options {
         height: 24px;
         min-width: 100px;

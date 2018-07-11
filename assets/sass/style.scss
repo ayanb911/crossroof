@@ -36,6 +36,11 @@ body{
       color: $color-dark;
     }
   }
+  .desktop-only{
+    @media screen and (max-width: $mxw-size){
+      display: none;
+    }
+  }
   .mobile-only{
     display: none;
     @media screen and (max-width: $mxw-size){
@@ -100,7 +105,6 @@ section{
 
 //specific styles
 .home-banner{
-  max-height: 732px;
   height: 100%;
   position: relative;
   background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat 0 0;
@@ -136,6 +140,9 @@ section{
       padding: 18px 56px 18px 28px;
       display: flex;
       background-position: 90% 21px;
+      @media screen and (max-width: $mxw-size){
+        padding-right: 40px;
+      }
       .btn-options{
         height: 24px;
         min-width: 100px;
