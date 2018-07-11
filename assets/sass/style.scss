@@ -108,6 +108,9 @@ section{
   @media screen and (max-width: $mxw-size){
     background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat center center;
     background-size: cover;
+    &>div{
+      height: 100%;
+    }
   }
   &:after{
     content: "";
@@ -121,7 +124,9 @@ section{
   }
   .banner-title{
     font-family: $font-opensans;
-    margin-top: 160px;
+    @media screen and (min-width: $mnw-size){
+      margin-top: 160px;
+    }
     padding-top: 34px;
     margin-bottom: 70px;
     z-index: 2;

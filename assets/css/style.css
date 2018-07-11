@@ -82,7 +82,9 @@ section {
   @media screen and (max-width: 1199.98px) {
     .home-banner {
       background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat center center;
-      background-size: cover; } }
+      background-size: cover; }
+      .home-banner > div {
+        height: 100%; } }
   .home-banner:after {
     content: "";
     position: absolute;
@@ -94,10 +96,12 @@ section {
     z-index: 1; }
   .home-banner .banner-title {
     font-family: "Open Sans";
-    margin-top: 160px;
     padding-top: 34px;
     margin-bottom: 70px;
     z-index: 2; }
+    @media screen and (min-width: 1200px) {
+      .home-banner .banner-title {
+        margin-top: 160px; } }
     .home-banner .banner-title a.btn-accent {
       position: relative;
       z-index: 2;
