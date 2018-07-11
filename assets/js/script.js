@@ -51,7 +51,7 @@ $(document).ready(function(){
   //--PROJECT SLIDER START
   $(".home-experience .content.owl-carousel").owlCarousel({
     items:3,
-    stagePadding: 100,
+    stagePadding: 50,
     margin: 100,
     mouseDrag: false,
     smartSpeed: 1000
