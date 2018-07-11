@@ -428,10 +428,9 @@ section{
 }
 
 footer{
-  background: $color-dark;
   color: #fff;
   &>.has-container{
-    padding: 90px 0 130px 0;
+    padding: 74px 0;
     @media screen and (max-width: $mxw-size){
       flex-direction: column;
     }
@@ -445,69 +444,60 @@ footer{
       }
     }
     .left-panel{
-      .menu-items{
-        flex-direction: column;
-        flex-wrap: wrap;
-        max-height: 200px;
-        margin: 0 0 -24px 0;
-        .menu-item{
-          font-family: $font-opensans;
-          font-size: 18px;
-          color: #FFFFFF;
-          margin-bottom: 24px;
-          margin-right: 90px;
-          text-transform: capitalize;
-          font-weight: 300;
-          cursor: pointer;
+      .address{
+        span{
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0.6px;
+          color: #a7a7a7;
         }
       }
     }
     .middle-panel{
       flex-direction: column;
-      img{
-        height: 40px;
+      .footer-logo{
+        img{
+          height: 40px;
+        }
       }
-      span{
-        font-family: $font-opensans;
-        font-size: 18px;
-        color: #FFFFFF;
-        margin-top: 18px;
-        font-weight: 300;
-      }
-    }
-    .right-panel{
-      .title{
-        font-family: $font-opensans;
-        font-size: 16px;
-        color: #FFFFFF;
-        line-height: 26px;
-      }
-      .content{
-        a{
-          font-family: $font-opensans;
-          font-weight: 300;
-          font-size: 16px;
-          color: #FFFFFF;
-          &:first-child{
-            margin: 4px 0 12px 0;
+      .social-icons{
+        margin-top: 20px;
+        .social-link{
+          margin-right: 16px;
+          display: flex;
+          img{
+            height: 20px;
+            width: auto;
+          }
+          &:last-child{
+            margin-right: 0;
           }
         }
       }
-      .contact-business{
-        margin-bottom: 28px;
+    }
+    .right-panel{
+      .content{
+        a{
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0.6px;
+          color: #a7a7a7;
+        }
       }
     }
   }
   .sub-footer{
-    background: rgba(255, 255, 255, 0.1);
-    height: 90px;
+    background: $color-dark;
+    height: 40px;
     .crosses{
       width: max-content;
-      margin-right: -16px;
-      opacity: 0.6;
       img{
-        height: 32px;
+        height: 20px;
         margin-right: 16px;
+        opacity: .6;
+        &:last-child{
+          margin-right: 0;
+        }
       }
     }
   }
