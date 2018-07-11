@@ -402,6 +402,9 @@ section{
 }
 .home-experience{
   .wrapper{
+    @media screen and (max-width: $mxw-size){
+      margin: 0;
+    }
     .title{
       font-family: $font-din;
       font-size: 26px;

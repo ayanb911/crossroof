@@ -356,6 +356,10 @@ section {
     font-weight: 300;
     margin: 0 auto; }
 
+@media screen and (max-width: 1199.98px) {
+  .home-experience .wrapper {
+    margin: 0; } }
+
 .home-experience .wrapper .title {
   font-family: DINCondensed;
   font-size: 26px;

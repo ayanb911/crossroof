@@ -51,10 +51,10 @@ $(document).ready(function(){
   //--PROJECT SLIDER START
   $(".home-experience .content.owl-carousel").owlCarousel({
     items:3,
-    loop:true,
+    startPosition: 2,
     center: true,
     stagePadding: 90,
-    margin: 120,
+    margin: 90,
     mouseDrag: false,
     smartSpeed: 1000
   });
