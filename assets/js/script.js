@@ -32,6 +32,9 @@ $(document).ready(function(){
     }
   })
 
+  //header background for mobile
+  $(".home-banner").css("max-height", $(window).height()+"px");
+
   //link scroll
   $("[data-target]").click(function(){
     var elementClass = "."+$(this).attr("data-target");

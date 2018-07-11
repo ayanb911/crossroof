@@ -36,14 +36,20 @@ body{
       color: $color-dark;
     }
   }
+  .mobile-only{
+    display: none;
+    @media screen and (max-width: $mxw-size){
+      display: block;
+    }
+  }
 }
 
 //element styles
 .has-container{
   margin: 0 140px;
   position: relative;
-  @media screen and (max-width: 979px){
-
+  @media screen and (max-width: $mxw-size){
+    margin: 0 24px;
   }
 }
 section{
@@ -76,6 +82,16 @@ section{
     background: url(../../assets/icons/icn_button-arrow--white.svg) no-repeat;
     background-size: 10px;
     background-position: 90% 19px;
+    &.is-hire{
+      padding: 0;
+      border: 0;
+      font-size: 20px;
+      color: $color-accent;
+      background: url(../../assets/icons/icn_button-arrow.svg) no-repeat;
+      background-size: 8px;
+      background-position: 70px 3px;
+      padding-right: 24px;
+    }
   }
   &:hover{
     background-position: 92% 19px;
@@ -89,6 +105,10 @@ section{
   position: relative;
   background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat 0 0;
   background-size: cover;
+  @media screen and (max-width: $mxw-size){
+    background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat center center;
+    background-size: cover;
+  }
   &:after{
     content: "";
     position: absolute;
@@ -153,6 +173,9 @@ section{
   .icn_scrolldown{
     margin-bottom: 180px;
     z-index: 2;
+    @media screen and (max-width: $mxw-size){
+      margin-bottom: 120px;
+    }
     img{
       animation: scrollDown 1.3s ease-in-out infinite alternate;
     }
@@ -169,6 +192,11 @@ section{
         justify-content: space-between;
         width: 32%;
         align-items: center;
+        @media screen and (max-width: $mxw-size){
+          width: max-content;
+          opacity: 0;
+          transition: all 0.7s ease;
+        }
         &.is-left{
           left: 0;
         }
@@ -183,6 +211,9 @@ section{
           letter-spacing: 1.35px;
           text-align: center;
           cursor: pointer;
+          @media screen and (max-width: $mxw-size){
+            display: none;
+          }
           &:last-child{
             margin-right: 0;
           }
@@ -201,7 +232,9 @@ section{
         }
       }
       .page-logo-wrapper{
-        margin: 0 90px;
+        @media screen and (min-width: $mnw-size){
+          margin: 0 90px;
+        }
         min-width: 195px;
         max-height: 54px;
         overflow: hidden;
@@ -231,6 +264,12 @@ section{
       .banner-menu{
         margin: 0 140px;
         width: auto;
+        @media screen and (max-width: $mxw-size){
+          margin: 0 24px;
+          .nav-panel{
+            opacity: 1;
+          }
+        }
         .menu-item{
           color: $color-light;
           &.is-menu-client{
@@ -251,12 +290,19 @@ section{
   .about-snippet{
     max-width: 60%;
     margin: 0 auto;
+    @media screen and (max-width: $mxw-size){
+      max-width: 100%;
+    }
     .tags{
       justify-content: space-between;
       align-items: center;
       max-width: 90%;
       margin: 0 auto;
       margin-bottom: 48px;
+      @media screen and (max-width: $mxw-size){
+        flex-direction: column;
+        max-width: 100%;
+      }
       .tag{
         font-family: $font-din;
         font-size: 36px;
@@ -266,8 +312,13 @@ section{
         position: relative;
         &:last-child{
           margin-right: 0;
-          &:after{
-            display: none;
+        }
+        @media screen and (max-width: $mxw-size){
+          margin-right: 0;
+          margin-bottom: 24px;
+          text-align: center;
+          &:last-child{
+            margin-bottom: 0;
           }
         }
       }
@@ -285,6 +336,9 @@ section{
 }
 .home-process{
   .section-content{
+    @media screen and (max-width: $mxw-size){
+      flex-direction: column;
+    }
     .service{
       max-width: 32%;
       width: 100%;
@@ -292,6 +346,14 @@ section{
       padding: 32px 0;
       cursor: default;
       position: relative;
+      @media screen and (max-width: $mxw-size){
+        max-width: 100%;
+        margin-bottom: 24px;
+        &:last-child{
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
       .title{
         font-family: $font-din;
         font-size: 26px;
@@ -349,6 +411,9 @@ section{
       }
     }
     .content{
+      @media screen and (max-width: $mxw-size){
+        flex-direction: column;
+      }
       &>div[class^="ex-"]{
         margin-right: 90px;
         .icon{
@@ -391,12 +456,19 @@ section{
     max-width: 74%;
     margin: 0 auto;
     width: 100%;
+    @media screen and (max-width: $mxw-size){
+      flex-direction: column;
+      max-width: 100%;
+    }
     .quote{
       max-width: 350px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: $mxw-size){
+        margin-bottom: 24px;
+      }
       .symbol{
         margin-bottom: 20px;
       }
@@ -422,7 +494,20 @@ section{
     width: 100%;
     margin: 70px auto 0 auto;
     &>a:first-child{
-      min-width: 278px;
+      @media screen and (min-width: $mnw-size){
+        min-width: 278px;
+      }
+    }
+    @media screen and (max-width: $mxw-size){
+      flex-direction: column;
+      max-width: 100%;
+      &>a{
+        min-width: 100%;
+        margin-bottom: 24px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
