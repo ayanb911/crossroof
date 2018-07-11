@@ -378,38 +378,55 @@ section {
 
 @media screen and (max-width: 1199.98px) {
   .home-experience .wrapper .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
+    max-height: 104px; } }
 
-.home-experience .wrapper .content > div[class^="ex-"] {
-  margin-right: 90px; }
-  .home-experience .wrapper .content > div[class^="ex-"] .icon {
-    height: 60px;
+@media screen and (min-width: 1200px) {
+  .home-experience .wrapper .content div[class^="ex-"] {
+    margin-right: 90px; } }
+
+@media screen and (max-width: 1199.98px) {
+  .home-experience .wrapper .content div[class^="ex-"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .home-experience .wrapper .content > div[class^="ex-"] .icon img {
-      height: 60px;
-      width: auto; }
-  .home-experience .wrapper .content > div[class^="ex-"] .subtext {
-    font-family: DINCondensed;
-    font-size: 16px;
-    color: #949494;
-    letter-spacing: 1.2px;
-    text-align: center;
-    margin-top: 28px; }
-  .home-experience .wrapper .content > div[class^="ex-"]:last-child {
-    margin-right: 0; }
+            align-items: center; } }
 
-.home-experience .wrapper .content > div.ex-ar .icon img {
+.home-experience .wrapper .content div[class^="ex-"] .icon {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .home-experience .wrapper .content div[class^="ex-"] .icon img {
+    height: 60px;
+    width: auto; }
+
+.home-experience .wrapper .content div[class^="ex-"] .subtext {
+  font-family: DINCondensed;
+  font-size: 16px;
+  color: #949494;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-top: 28px; }
+  @media screen and (max-width: 1199.98px) {
+    .home-experience .wrapper .content div[class^="ex-"] .subtext {
+      width: 70px; } }
+
+.home-experience .wrapper .content div[class^="ex-"]:last-child {
+  margin-right: 0; }
+
+.home-experience .wrapper .content div.ex-ar .icon img {
   height: 41px; }
 
 .home-experience .wrapper .controls {

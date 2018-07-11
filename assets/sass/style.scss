@@ -424,10 +424,17 @@ section{
     }
     .content{
       @media screen and (max-width: $mxw-size){
-        flex-direction: column;
+        max-height: 104px;
       }
-      &>div[class^="ex-"]{
-        margin-right: 90px;
+      div[class^="ex-"]{
+        @media screen and (min-width: $mnw-size){
+          margin-right: 90px;
+        }
+        @media screen and (max-width: $mxw-size){
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
         .icon{
           height: 60px;
           display: flex;
@@ -445,12 +452,15 @@ section{
           letter-spacing: 1.2px;
           text-align: center;
           margin-top: 28px;
+          @media screen and (max-width: $mxw-size){
+            width: 70px;
+          }
         }
         &:last-child{
           margin-right: 0;
         }
       }
-      &>div.ex-ar{
+      div.ex-ar{
         .icon{
           img{
             height: 41px;
