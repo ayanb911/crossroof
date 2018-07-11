@@ -64,6 +64,9 @@ section {
     background: url(../../assets/icons/icn_button-arrow--white.svg) no-repeat;
     background-size: 10px;
     background-position: 90% 19px; }
+    @media screen and (max-width: 320px) {
+      .btn-accent.is-inverse {
+        padding-left: 12px; } }
     .btn-accent.is-inverse.is-hire {
       padding: 0;
       border: 0;
@@ -510,7 +513,26 @@ footer {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0 0 48px 0; }
+        footer > .has-container .middle-panel {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+        footer > .has-container .right-panel {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2;
+          margin-top: 32px; }
+        footer > .has-container .left-panel {
+          -webkit-box-ordinal-group: 4;
+              -ms-flex-order: 3;
+                  order: 3; }
+          footer > .has-container .left-panel span {
+            width: 100%; } }
     footer > .has-container > div {
       width: 100%; }
       @media screen and (min-width: 1200px) {
@@ -518,7 +540,8 @@ footer {
           max-width: 30%; } }
       @media screen and (max-width: 1199.98px) {
         footer > .has-container > div {
-          margin-bottom: 24px; } }
+          margin-bottom: 16px;
+          text-align: center !important; } }
     footer > .has-container .left-panel .address span {
       font-size: 16px;
       line-height: 26px;

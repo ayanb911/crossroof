@@ -87,6 +87,9 @@ section{
     background: url(../../assets/icons/icn_button-arrow--white.svg) no-repeat;
     background-size: 10px;
     background-position: 90% 19px;
+    @media screen and (max-width: 320px){
+      padding-left: 12px;
+    }
     &.is-hire{
       padding: 0;
       border: 0;
@@ -543,6 +546,21 @@ footer{
     padding: 74px 0;
     @media screen and (max-width: $mxw-size){
       flex-direction: column;
+      align-items: center;
+      padding: 0 0 48px 0;
+      .middle-panel{
+        order: 1;
+      }
+      .right-panel{
+        order: 2;
+        margin-top: 32px;
+      }
+      .left-panel{
+        order: 3;
+        span{
+          width: 100%;
+        }
+      }
     }
     &>div{
       width: 100%;
@@ -550,7 +568,8 @@ footer{
         max-width: 30%;
       }
       @media screen and (max-width: $mxw-size){
-        margin-bottom: 24px;
+        margin-bottom: 16px;
+        text-align: center !important;
       }
     }
     .left-panel{
