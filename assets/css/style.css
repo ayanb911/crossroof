@@ -60,7 +60,7 @@ section {
   max-height: 732px;
   height: 100%;
   position: relative;
-  background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat center center;
+  background: url("../../assets/images/Background Images/bg-banner-1.jpeg") no-repeat 0 0;
   background-size: cover; }
   .home-banner:after {
     content: "";
