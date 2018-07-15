@@ -188,6 +188,8 @@ section{
   .icn_scrolldown{
     margin-bottom: 14%;
     z-index: 2;
+    padding: 8px;
+    cursor: pointer;
     @media screen and (max-width: $mxw-size){
       margin-bottom: 30%;
     }
@@ -506,6 +508,9 @@ section{
         color: #FFFFFF;
         text-align: center;
         line-height: 32px;
+        @media screen and (min-width: $mnw-size){
+          min-height: 128px;
+        }
       }
       .quoter{
         color: #fff;
