@@ -132,7 +132,7 @@ section{
   .banner-title{
     font-family: $font-opensans;
     @media screen and (min-width: $mnw-size){
-      margin-top: 160px;
+      margin-top: 10%;
     }
     padding-top: 34px;
     margin-bottom: 70px;
@@ -186,10 +186,10 @@ section{
     }
   }
   .icn_scrolldown{
-    margin-bottom: 180px;
+    margin-bottom: 14%;
     z-index: 2;
     @media screen and (max-width: $mxw-size){
-      margin-bottom: 120px;
+      margin-bottom: 30%;
     }
     img{
       animation: scrollDown 1.3s ease-in-out infinite alternate;

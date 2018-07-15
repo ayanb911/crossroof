@@ -106,7 +106,7 @@ section {
     z-index: 2; }
     @media screen and (min-width: 1200px) {
       .home-banner .banner-title {
-        margin-top: 160px; } }
+        margin-top: 10%; } }
     .home-banner .banner-title a.btn-accent {
       position: relative;
       z-index: 2;
@@ -156,11 +156,11 @@ section {
       letter-spacing: .7px;
       color: #afafaf; }
   .home-banner .icn_scrolldown {
-    margin-bottom: 180px;
+    margin-bottom: 14%;
     z-index: 2; }
     @media screen and (max-width: 1199.98px) {
       .home-banner .icn_scrolldown {
-        margin-bottom: 120px; } }
+        margin-bottom: 30%; } }
     .home-banner .icn_scrolldown img {
       -webkit-animation: scrollDown 1.3s ease-in-out infinite alternate;
               animation: scrollDown 1.3s ease-in-out infinite alternate; }
