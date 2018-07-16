@@ -171,8 +171,12 @@ section {
     background: transparent;
     z-index: 2; }
     .home-banner .banner-menu-wrapper .banner-menu {
-      position: relative;
-      max-width: 100%; }
+      position: relative; }
+      @media screen and (min-width: 1200px) {
+        .home-banner .banner-menu-wrapper .banner-menu {
+          position: absolute;
+          max-width: calc(100% - 280px);
+          width: 100%; } }
       .home-banner .banner-menu-wrapper .banner-menu .nav-panel {
         position: absolute;
         -webkit-box-pack: justify;
@@ -243,9 +247,15 @@ section {
       background: #222;
       z-index: 999;
       box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+      @media screen and (min-width: 1200px) {
+        .home-banner .banner-menu-wrapper.is-fixed {
+          height: 54px; } }
       .home-banner .banner-menu-wrapper.is-fixed .banner-menu {
         margin: 0 140px;
         width: auto; }
+        @media screen and (min-width: 1200px) {
+          .home-banner .banner-menu-wrapper.is-fixed .banner-menu {
+            width: 100%; } }
         @media screen and (max-width: 1199.98px) {
           .home-banner .banner-menu-wrapper.is-fixed .banner-menu {
             margin: 0 24px; }
@@ -387,7 +397,15 @@ section {
 
 @media screen and (max-width: 1199.98px) {
   .home-experience .wrapper .content {
-    max-height: 104px; } }
+    max-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-height: 100%;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-left: 34px;
+    margin-bottom: -44px; } }
 
 @media screen and (min-width: 1200px) {
   .home-experience .wrapper .content div[class^="ex-"] {
@@ -404,7 +422,9 @@ section {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center;
+    margin-bottom: 34px;
+    margin-right: 34px; } }
 
 .home-experience .wrapper .content div[class^="ex-"] .icon {
   height: 60px;
@@ -432,8 +452,9 @@ section {
     .home-experience .wrapper .content div[class^="ex-"] .subtext {
       width: 70px; } }
 
-.home-experience .wrapper .content div[class^="ex-"]:last-child {
-  margin-right: 0; }
+@media screen and (min-width: 1200px) {
+  .home-experience .wrapper .content div[class^="ex-"]:last-child {
+    margin-right: 0; } }
 
 .home-experience .wrapper .content div.ex-ar .icon img {
   height: 41px; }

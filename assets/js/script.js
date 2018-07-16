@@ -44,9 +44,9 @@ $(document).ready(function(){
   })
 
   //mobile owl carousel for experience
-  if($(window).width()<=1198.88){
-    $(".home-experience .content").addClass("owl-carousel");
-  }
+  // if($(window).width()<=1198.88){
+  //   $(".home-experience .content").addClass("owl-carousel");
+  // }
 
   //--PROJECT SLIDER START
   $(".home-experience .content.owl-carousel").owlCarousel({

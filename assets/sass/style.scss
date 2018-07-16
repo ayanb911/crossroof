@@ -203,7 +203,11 @@ section{
     z-index: 2;
     .banner-menu{
       position: relative;
-      max-width: 100%;
+      @media screen and (min-width: $mnw-size){
+        position: absolute;
+        max-width: calc(100% - 280px);
+        width: 100%;
+      }
       .nav-panel{
         position: absolute;
         justify-content: space-between;
@@ -278,9 +282,15 @@ section{
       background: $color-dark;
       z-index: 999;
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      @media screen and (min-width: $mnw-size){
+        height: 54px;
+      }
       .banner-menu{
         margin: 0 140px;
         width: auto;
+        @media screen and (min-width: $mnw-size){
+          width: 100%;
+        }
         @media screen and (max-width: $mxw-size){
           margin: 0 24px;
           .nav-panel{
@@ -432,7 +442,13 @@ section{
     }
     .content{
       @media screen and (max-width: $mxw-size){
-        max-height: 104px;
+        // max-height: 104px;
+        max-width: 100%;
+        flex-wrap: wrap;
+        max-height: 100%;
+        justify-content: center !important;
+        margin-left: 34px;
+        margin-bottom: -44px;
       }
       div[class^="ex-"]{
         @media screen and (min-width: $mnw-size){
@@ -442,6 +458,8 @@ section{
           display: flex;
           flex-direction: column;
           align-items: center;
+          margin-bottom: 34px;
+          margin-right: 34px;
         }
         .icon{
           height: 60px;
@@ -464,8 +482,10 @@ section{
             width: 70px;
           }
         }
-        &:last-child{
-          margin-right: 0;
+        @media screen and (min-width: $mnw-size){
+          &:last-child{
+            margin-right: 0;
+          }
         }
       }
       div.ex-ar{
@@ -619,6 +639,25 @@ footer{
         }
       }
     }
+    // .mobile-only{
+    //   .menu-links{
+    //     a{
+    //       font-family: $font-din;
+    //       font-size: 18px;
+    //       color: $color-light;
+    //       opacity: 0.6;
+    //       letter-spacing: 1.35px;
+    //       text-align: center;
+    //       cursor: pointer;
+    //       &:last-child{
+    //         margin-right: 0;
+    //       }
+    //       &:hover{
+    //         opacity: 1;
+    //       }
+    //     }
+    //   }
+    // }
   }
   .sub-footer{
     background: $color-dark;

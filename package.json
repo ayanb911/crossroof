@@ -1,12 +1,12 @@
 {
-  "name": "kidbit",
+  "name": "Crossroof",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Crossroof designs",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.7.7",
