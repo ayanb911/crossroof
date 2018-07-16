@@ -29,7 +29,7 @@ body {
   body.noScroll {
     overflow: hidden; }
 
-.mobile-only.loader {
+.isLoader {
   position: fixed;
   background: #222;
   height: 100%;
@@ -47,7 +47,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   opacity: 1; }
-  .mobile-only.loader img {
+  .isLoader img {
     height: 40px;
     width: auto;
     -webkit-animation: loaderAnimation 8s linear infinite;

@@ -1,6 +1,6 @@
 //loader
 $(window).on("load", function() {
-  $(".mobile-only.loader").css("opacity", 0);
+  $(".isLoader").css("opacity", 0);
   $("body").removeClass("noScroll");
 });
 $(document).ready(function(){
