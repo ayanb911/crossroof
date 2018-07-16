@@ -1,3 +1,8 @@
+//loader
+$(window).on("load", function() {
+  $(".mobile-only.loader").css("opacity", 0);
+  $("body").removeClass("noScroll");
+});
 $(document).ready(function(){
 
   //header button
@@ -10,7 +15,7 @@ $(document).ready(function(){
     slideLength = slideElem.attr("data-slidelength");
     slideElem.css("transform", "translateY(-"+ slideLength +"px)");
     if((i+1) <= itemLimit){
-        slideElem.attr("data-slidelength", parseInt(slideLength)+36);
+      slideElem.attr("data-slidelength", parseInt(slideLength)+36);
     }
     else{
       slideElem.attr("data-slidelength", 36);

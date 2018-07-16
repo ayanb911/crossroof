@@ -47,6 +47,29 @@ body{
       display: block;
     }
   }
+  &.noScroll{
+    overflow: hidden;
+  }
+}
+
+//loader
+.mobile-only.loader{
+  position: fixed;
+  background: $color-dark;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  img{
+    height: 40px;
+    width: auto;
+    animation: loaderAnimation 8s linear infinite;
+  }
 }
 
 //element styles
@@ -685,5 +708,11 @@ footer{
   }
   100%{
     transform: translateY(4px);
+  }
+}
+
+@keyframes loaderAnimation{
+  100%{
+    transform: rotate(360deg);
   }
 }
