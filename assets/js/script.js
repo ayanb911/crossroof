@@ -1,6 +1,9 @@
 //loader
 $(window).on("load", function() {
   $(".isLoader").css("opacity", 0);
+  setTimeout(function(){
+    $(".isLoader").hide();
+  }, 300)
   $("body").removeClass("noScroll");
 });
 $(document).ready(function(){
