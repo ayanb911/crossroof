@@ -55,7 +55,7 @@ body{
 //loader
 .isLoader{
   position: fixed;
-  background: $color-dark;
+  background: #111;
   height: 100%;
   width: 100%;
   top: 0;
@@ -230,6 +230,7 @@ section{
         position: absolute;
         max-width: calc(100% - 280px);
         width: 100%;
+        bottom: 24px;
       }
       .nav-panel{
         position: absolute;
@@ -313,6 +314,7 @@ section{
         width: auto;
         @media screen and (min-width: $mnw-size){
           width: 100%;
+          bottom: 0;
         }
         @media screen and (max-width: $mxw-size){
           margin: 0 24px;

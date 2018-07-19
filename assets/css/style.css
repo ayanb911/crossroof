@@ -31,7 +31,7 @@ body {
 
 .isLoader {
   position: fixed;
-  background: #222;
+  background: #111;
   height: 100%;
   width: 100%;
   top: 0;
@@ -202,7 +202,8 @@ section {
         .home-banner .banner-menu-wrapper .banner-menu {
           position: absolute;
           max-width: calc(100% - 280px);
-          width: 100%; } }
+          width: 100%;
+          bottom: 24px; } }
       .home-banner .banner-menu-wrapper .banner-menu .nav-panel {
         position: absolute;
         -webkit-box-pack: justify;
@@ -281,7 +282,8 @@ section {
         width: auto; }
         @media screen and (min-width: 1200px) {
           .home-banner .banner-menu-wrapper.is-fixed .banner-menu {
-            width: 100%; } }
+            width: 100%;
+            bottom: 0; } }
         @media screen and (max-width: 1199.98px) {
           .home-banner .banner-menu-wrapper.is-fixed .banner-menu {
             margin: 0 24px; }
