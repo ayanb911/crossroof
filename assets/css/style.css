@@ -559,7 +559,8 @@ section {
           margin-bottom: 0; } }
 
 footer {
-  color: #fff; }
+  color: #fff;
+  border-bottom: 12px solid #222; }
   footer > .has-container {
     padding: 74px 0; }
     @media screen and (max-width: 1199.98px) {

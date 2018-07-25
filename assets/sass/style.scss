@@ -592,6 +592,7 @@ section{
 
 footer{
   color: #fff;
+  border-bottom: 12px solid $color-dark;
   &>.has-container{
     padding: 74px 0;
     @media screen and (max-width: $mxw-size){

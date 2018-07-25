@@ -5,6 +5,11 @@ $(window).on("load", function() {
     $(".isLoader").hide();
   }, 300)
   $("body").removeClass("noScroll");
+
+  // setInterval(function(){
+  //   $("html, body").animate({ scrollTop: $(document).height()-$(window).height() }, 5000);
+  // }, 4000)
+
 });
 $(document).ready(function(){
 
